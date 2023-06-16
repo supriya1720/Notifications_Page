@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Notifications page</title>
+  <script src="script.js"></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body style="background-color: hsl(210, 60%, 98%)">
+  <div  class="first-block">
+    <h1 class="first-heading">Notifications</h1>
+    <div id="second-block">
+      <h1 id="first-num">3</h1>
+    </div>
+    <button style="all:unset" type="button" onclick="notifs(3);unread1();unread2();unread3()"></buttonbutton> <div class="third-block" >
+      <h4 class="second-heading"> Mark all as read</h4>
+    </div>
+    <button id="tabc_unread1" style="all:unset" type="button" onclick="notifs(1);unread1()"><div id="first-msg">
+      <img class="profile" src="assets\images\avatar-mark-webber.webp" alt="web-ber">
+      <div class="text">
+        <h4 class="head1"><span class="name">Mark Webber</span> <span style="color:#B9BCC2"> reacted to your recent post</span> <span class="abcd"> My first tournament today!</span></h4>
+        <span id="red-dot1"style="margin-right:145px;margin-top:23px;float:right;"></span>
+        <h4 class="head2"> 1m ago</h4>
+      </div>
+    </div></button>
+    <button id="tabc_unread2" style="all: unset;" type="button" onclick="notifs(1);unread2()"><div id="second-msg">
+      <img class="profile" src="assets\images\avatar-angela-gray.webp" alt="angela">
+      <div class="text">
+        <h4 class="head1"><span class="name">Angela Gray</span><span style="color:#B9BCC2"> followed you</span> </h4>
+        <span id="red-dot2"style="float:right;margin-right:414px;margin-top:24px;">..</span>
+        <h4 class="head2">5m ago</h4>
+      </div>
+    </div></button>
+    <button id="tabc_unread3" style="all: unset;" type="button" onclick="notifs(1);unread3()"><div id="third-msg">
+      <img class="profile" src="assets\images\avatar-jacob-thompson.webp" alt="jacob">
+      <div class="text">
+        <h4 class="head1"><span class="name">Jacob Thompson</span><span style="color:#B9BCC2"> has joined your group</span><span class="efgh"> Chess Club</span></h4>
+        <span id="red-dot3"style="float:right;margin-top:24px;margin-right:258px;">..</span>
+        <h4 class="head2">1 day ago</h4>
+      </div>
+    </div></button>
+    <div class="fourth-msg">
+      <img class ="profile" src="assets\images\avatar-rizky-hasanuddin.webp" alt="rizky">
+      <div id="text_riz">
+        <h4 class="head1"><span class="name">Rizky Hasanuddin</span><span style="color:#B9BCC2"> sent you a private message</span></h4>
+        <h4 class="head2">5 days ago</h4>
+      <div class="large-msg">
+        <p style="margin-left: 5px;color:#828488;">Hello,thanks for seeting up the Chess Club.I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</p>
+
+      </div>
+    </div>
+    </div>
+    <div class="rest-msg">
+      <img class ="profile" src="assets\images\avatar-kimberly-smith.webp" alt="kimberly">   
+      <div class="text" style="width:450px">
+        <h4 class="head1" style="width:400px"><span class="name">Kimberly Smith </span><span style="color:#B9BCC2;display:inline-block">commented on your picture</span></h4>
+        <h4 class="head2">1 week ago</h4>
+      </div>
+      <img  class="chess" src="assets\images\image-chess.webp" alt="chess">
+    </div>
+    <div class="rest-msg">
+      <img class ="profile" src="assets\images\avatar-nathan-peterson.webp" alt="nathan">
+      <div class="text">
+        <h4 class="head1"><span class="name">Nathan Peterson</span><span style="color:#B9BCC2"> reacted to your recent post</span><span class="abcd"> 5 end-game strategies to increase your win rate</span></h4>
+        <h4 class="head2">2 weeks ago</h4>
+      </div>
+    </div>
+    <div class="rest-msg">
+      <img class ="profile" src="assets\images\avatar-anna-kim.webp" alt="anna">
+      <div class="text">
+        <h4 class="head1"><span class="name">Anna Kim </span><span style="color:#B9BCC2">left the group </span><span class="abcd">Chess Club</span></h4>
+        <h4 class="head2">2 weeks ago</h4>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Supriya Kumari</a>.
+  </div>
+</body>
+</html>
