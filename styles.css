@@ -122,7 +122,10 @@ body{
     width:45px;
     margin-top:13px;
     margin-left:140px;
+    border:2px solid white;
+    border-radius:7px 7px 7px 7px;
 }
+.chess:hover{border-color:#E5EFF9}
 #red-dot1, #red-dot2, #red-dot3{
     border-radius:50%;
     background-color: red;
